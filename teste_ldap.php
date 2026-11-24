@@ -16,7 +16,7 @@ if ($ldap) {
     ldap_set_option($ldap, LDAP_OPT_REFERRALS, 0);
 
     // Testar bind anonimo ou com conta de teste
-    $bind = @ldap_bind($ldap, "202430016623@ceep.plg", "tua_senha_aqui");
+    $bind = @ldap_bind($ldap, "Matricula@ceep.plg", "sua_senha_aqui");
     if ($bind) {
         echo "<p style='color:green;'>[SUCESSO] Autenticacao LDAP efetuada com sucesso!</p>";
     } else {
